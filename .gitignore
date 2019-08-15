@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# local data directory content
+/data/*
+
+# Mac stuff
+.DS_Store
