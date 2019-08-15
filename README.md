@@ -24,5 +24,7 @@
 - run `python src/create_dataset.py`. This scripts creates a dataset with similar size as the authors of the original paper.
 - run `python src/replace_rare_words_and_numbers.py`. This Scripts replaces numbers with a unique Token and replaces words, which occures less or equal 10 times within the dataset. (You can change the threshold in the file.)
 
+
 ## Run Experiments
-- open your Jupyter Notebook in the browser, open the subdirectory `src`and run the Notebooks.
+- open your Jupyter Notebook in the browser, open the subdirectory `src`and run the Notebook `create_train_test_splits.ipynb`. This Notebook creates train/test splits for test 1 and test 2.
+- now you can run the Experiments `Table1_2.ipynb`, `Table3-4-6.ipynb` and `Table8.ipynb`.
