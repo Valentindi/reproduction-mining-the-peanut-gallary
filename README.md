@@ -18,11 +18,11 @@
 - `jupyter-notebook`
 
 ## Get Data
-- Download 7 subsets of the [Amazon Customer Reviews Dataset](https://s3.amazonaws.com/amazon-reviews-pds/readme.html). I selected the following categories: 'mobile_electronics', 'watches', 'home entertainment', 'tools', 'electronics', 'sports', 'wireless'. But it should work with other categories as well.
+- Download 7 subsets of the [Amazon Customer Reviews Dataset](https://s3.amazonaws.com/amazon-reviews-pds/readme.html). I selected the following categories: 'mobile_electronics', 'watches', 'home entertainment', 'tools', 'electronics', 'sports', 'wireless'. It should work with other categories as well.
 - Merge the downloaded files (Maybe it's a good idea to concat a small split of the large files) and call move the file to `data/amazon.csv`. (you can edit filenames and paths in the python scripts.)
 - run `python src/preprocess.py`. This scripts removes not valid datasets, concats review title and body, tokenize reviews and calculates a boolean rating based on the amazon 5-star-rating.
 - run `python src/create_dataset.py`. This scripts creates a dataset with similar size as the authors of the original paper.
 - run `python src/replace_rare_words_and_numbers.py`. This Scripts replaces numbers with a unique Token and replaces words, which occures less or equal 10 times within the dataset. (You can change the threshold in the file.)
 
 ## Run Experiments
-- open your Jupyter Notebook in the browser, open the subdirectory `src`and run the Notebooks.
+- open your Jupyter Notebook in the browser, open the subdirectory `src` and run the notebooks.
