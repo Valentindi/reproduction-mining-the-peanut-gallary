@@ -18,7 +18,7 @@
 - `jupyter-notebook`
 
 ## Get Data
-- Download 7 subsets of the [Amazon Customer Reviews Dataset](https://s3.amazonaws.com/amazon-reviews-pds/readme.html). I selected the following categories: 'mobile_electronics', 'watches', 'home entertainment', 'tools', 'electronics', 'sports', 'wireless'. But it should work with other categories as well.
+- Download 7 subsets of the [Amazon Customer Reviews Dataset](https://s3.amazonaws.com/amazon-reviews-pds/readme.html). I selected the following categories: 'mobile_electronics', 'watches', 'home entertainment', 'tools', 'electronics', 'sports', 'wireless'. It should work with other categories as well.
 - Merge the downloaded files (Maybe it's a good idea to concat a small split of the large files) and call move the file to `data/amazon.csv`. (you can edit filenames and paths in the python scripts.)
 - run `python src/preprocess.py`. This scripts removes not valid datasets, concats review title and body, tokenize reviews and calculates a boolean rating based on the amazon 5-star-rating.
 - run `python src/create_dataset.py`. This scripts creates a dataset with similar size as the authors of the original paper.
@@ -28,3 +28,4 @@
 ## Run Experiments
 - open your Jupyter Notebook in the browser, open the subdirectory `src`and run the Notebook `create_train_test_splits.ipynb`. This Notebook creates train/test splits for test 1 and test 2.
 - now you can run the Experiments `Table1_2.ipynb`, `Table3-4-6.ipynb` and `Table8.ipynb`.
+
